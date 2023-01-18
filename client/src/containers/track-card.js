@@ -7,7 +7,8 @@ import { humanReadableTimeFromSeconds } from '../utils/helpers';
  * Track Card component renders basic info in a card format
  * for each track populating the tracks grid homepage.
  */
-const TrackCard = ({ track }) => {
+const TrackCard = (props) => {
+  const track = props.track;
   const { title, thumbnail, author, length, modulesCount } = track;
 
   return (
