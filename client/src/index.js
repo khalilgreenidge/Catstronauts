@@ -6,13 +6,13 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
 const client = new ApolloClient({
   uri: 'http://localhost:4000',
-  cache: new  InMemoryCache(),
+  cache: new InMemoryCache(),
 });
 
 ReactDOM.render(
-    <ApolloProvider client={client}>
-        <GlobalStyles />
-        <Pages />
-    </ApolloProvider>,
+  <ApolloProvider client={client}>
+    <GlobalStyles />
+    <Pages />
+  </ApolloProvider>,
   document.getElementById('root')
 );
